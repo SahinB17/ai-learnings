@@ -45,7 +45,7 @@ plot_tree(best_model,feature_names=x.columns,
 
 plt.show()
 
-y_pred=model.predict(xtest)
+y_pred=best_model.predict(xtest)
 print(classification_report(ytest,y_pred))
 print(confusion_matrix(ytest,y_pred))
 
