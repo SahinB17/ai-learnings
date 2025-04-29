@@ -40,7 +40,7 @@ for i in d:
 
 print(f"Best depth={best_depth}")
 plt.figure(figsize=(12,8))
-plot_tree(model,feature_names=x.columns,
+plot_tree(best_model,feature_names=x.columns,
     class_names=['DrugA','DrugB','DrugC','DrugX','DrugY'],filled=True,rounded=True)
 
 plt.show()
